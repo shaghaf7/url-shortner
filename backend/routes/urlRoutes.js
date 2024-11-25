@@ -1,7 +1,9 @@
-const express = require('express');
+import express from 'express';
+import ShortId from 'shortid';
+import Url from '../models/url.js';
+
 const router = express.Router();
-const ShortId = require('shortid');
-const Url = require('../models/url');
+
 
 // Create Short URL
 router.post('/shorten', async (req, res) => {
@@ -34,4 +36,4 @@ router.get('/:shortUrl', async (req, res) => {
     }
 });
 
-module.exports = router;
+export default router;

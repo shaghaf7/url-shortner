@@ -1,11 +1,11 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-const dotenv = require('dotenv');
+import express from 'express';
+import mongoose from 'mongoose';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import urlRoutes from './routes/urlRoutes.js'; // Include the `.js` file extension
 
 dotenv.config();
 
-const urlRoutes = require('./routes/urlRoutes');
 
 const app = express();
 app.use(cors());
