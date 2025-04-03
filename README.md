@@ -69,6 +69,19 @@ npm run dev
 
 The frontend should now be running, and you can access the application in your browser.
 
+## API Endpoints
+
+### Authentication
+
+- **POST** `/api/auth/register` - Register a new user
+- **POST** `/api/auth/login` - Login and get a token
+
+### URL Management
+
+- **POST** `/api/url/shorten` - Shorten a new URL
+- **GET** `/api/url/:shortCode` - Redirect to the original URL
+- **GET** `/api/url/user` - Get all URLs created by a user (requires authentication)
+
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute, please follow these steps:
@@ -79,12 +92,16 @@ Contributions are welcome! If you'd like to contribute, please follow these step
 4. Push to the branch (`git push origin feature-branch`)
 5. Open a pull request
 
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
 ## Contact
 
 For any inquiries or support, feel free to reach out:
 
 - **GitHub:** [shaghaf7](https://github.com/shaghaf7)
-
+- **Email:** shaghafkashif@gmail.com
 
 ---
 
